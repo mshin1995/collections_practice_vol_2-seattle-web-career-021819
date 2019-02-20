@@ -51,7 +51,7 @@ def merge_data(array1, array2)
   end
 end
 
-def find_cool
+def find_cool(array)
   new_array = []
   array.each do |element|
     new_array << element if element[:temperature] == "cool"
