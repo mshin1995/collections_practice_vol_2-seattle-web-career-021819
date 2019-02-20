@@ -34,7 +34,7 @@ def count_elements(array)
   end.uniq
 end
 
-def merge_data
+def merge_data(array1, array2)
   arr2[0].map do |name, prop_hash|
     new_prop_hash = {}
     arr1.each do |new_attr_hash|
