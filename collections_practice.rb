@@ -49,7 +49,7 @@ end
 def find_cool
   new_array = []
   array.each do |element|
-    container << element if element[:temperature] == "cool"
+    new_array << element if element[:temperature] == "cool"
   end
   new_array
 end
