@@ -11,9 +11,14 @@ def contain_a(array)
 end
 
 def first_wa(array)
-  array.find do |element|
-    element.include?("wa")
+  first_wa = nil
+  array.each do |element|
+    if element.match(/wa/)
+      first_wa = element
+      break
+    end
   end
+  first_wa
 end
 
 def remove_non_strings(array)
