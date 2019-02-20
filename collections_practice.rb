@@ -51,7 +51,7 @@ def find_cool
   array.each do |element|
     container << element if element[:temperature] == "cool"
   end
-  container
+  new_array
 end
 
 def organize_schools
